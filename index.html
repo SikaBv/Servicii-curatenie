@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicii Curățenie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(to right, #007bff, #0056b3);
+            color: white;
+            padding: 40px 10%;
+            text-align: center;
+            animation: slideInDown 1s ease-in-out;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+        .container {
+            padding: 20px 10%;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .service-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .service-card img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        .service-card h3 {
+            margin: 10px 0;
+        }
+        .about-us {
+            background: #e9ecef;
+            padding: 40px 10%;
+            margin: 40px 0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .about-us h2 {
+            text-align: center;
+        }
+        .about-us p {
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+            animation: bounce 2s infinite;
+        }
+        .cta a {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        .cta a:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Servicii Curățenie</h1>
+        <p>Curățenie impecabilă pentru locuința sau afacerea ta!</p>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Serviciile Noastre</h2>
+            <div class="services">
+                <div class="service-card">
+                    <a href="curatenie-rezidentiala.html">
+                        <img src="https://via.placeholder.com/100" alt="Curățenie Rezidențială">
+                        <h3>Curățenie Rezidențială</h3>
+                        <p>Servicii personalizate pentru apartamente și case.</p>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <a href="curatenie-comerciala.html">
+                        <img src="https://via.placeholder.com/100" alt="Curățenie Comercială">
+                        <h3>Curățenie Comercială</h3>
+                        <p>Îngrijirea spațiilor comerciale, birourilor și clădirilor.</p>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <a href="curatenie-constructor.html">
+                        <img src="https://via.placeholder.com/100" alt="Curățenie după Constructor">
+                        <h3>Curățenie după Constructor</h3>
+                        <p>Curățenie generală după renovări sau construcții.</p>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <a href="curatenie-eveniment.html">
+                        <img src="https://via.placeholder.com/100" alt="Curățenie de Eveniment">
+                        <h3>Curățenie după Evenimente</h3>
+                        <p>Curățenie rapidă și eficientă după evenimente speciale.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="about-us">
+            <h2>Despre Noi</h2>
+            <p>
+                La <strong>Servicii Curățenie</strong>, ne dedicăm oferirii de servicii profesionale și de încredere. 
+                Echipa noastră este formată din oameni pasionați și bine pregătiți, care folosesc echipamente moderne și produse ecologice pentru a asigura curățenia și siguranța spațiilor tale.
+            </p>
+        </section>
+        <div class="cta">
+            <a href="contact.html">Contactează-ne acum!</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Servicii Curățenie. Toate drepturile rezervate. <a href="contact.html">Contact</a></p>
+    </footer>
+</body>
+</html>
